@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <h1 id="alert" class="text-center alert alert-success">Hola Mundo!</h1>
+    <!-- All of the Node.js APIs are available in this renderer process. -->
+    <ul class="list-unstyled text-center">
+      <li> We are using Node.js <script>document.write(process.versions.node)</script></li>
+      <li>Chromium <script>document.write(process.versions.chrome)</script></li>
+      <li>  and Electron <script>document.write(process.versions.electron)</script></li>
+    </ul>
+    <button id="frameless-window" class="btn btn-default">Abre nueva ventana</button>
+    <div id="debug">Hola, estoy vacio</div>
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.1.js')
+    </script>
+  </body>
+</html>
